@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>deposit</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header bg-dark">
+
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-end justify-content-md-between">
+                <div class="contact-info d-flex align-items-center" id="balance">
+                    <i class="bi bi-phone d-flex align-items-center d-none d-lg-block"><span>+880 1306166336</span></i>
+                    <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00
+                            PM</span></i>
+                </div>
+                <a href="#book-a-table" class="cta-btn">Book Hotel</a>
+            </div>
+        </div><!-- End Top Bar -->
+
+        <div class="branding d-flex align-items-cente">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
+                    <h1 class="sitename">WanderStay</h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Hotels</a></li>
+                        <li><a href="index.html">Specials</a></li>
+                        <li><a href="index.html">Events</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li class="dropdown"><a href="#"><span><i class="fa-regular fa-user"></i></span> <i
+                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul id="drop-item">
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Deposite -->
+
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-lg-12">
+            <div class="">
+                <div class="row justify-content-center m-auto">
+                    <div class="">
+                        <h5 id="login-error" class="mb-3 text-danger text-center"></h5>
+                        <div class="register-container">
+                            <!-- Register image -->
+                            <h2 class="text-center">Deposit Money To Your Account</h2>
+                            <form class="row d-flex justify-content-center register-label">
+                                <div class="mb-3 col-lg-6 text-center">
+                                    <label for="username" class="form-label">Amount</label>
+                                    <input type="text" class="form-control" id="amount"
+                                        placeholder="Deposit amount" required>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button  type="submit" onclick="handledeposit(event)"
+                                        class="btn btn-warning btn-block w-50 m-auto">Deposit</button>
+                                </div>
+                            </form>
+                            <p class="text-center mt-3">Create New Account? <a href="Register.html">Register here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer" class="footer dark-background mt-5">
+
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-geo-alt icon"></i>
+                    <div class="address">
+                        <h4>Address</h4>
+                        <p>A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                        <p></p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-telephone icon"></i>
+                    <div>
+                        <h4>Contact</h4>
+                        <p>
+                            <strong>Phone:</strong> <span>+880 1306166336</span><br>
+                            <strong>Email:</strong> <span>wanderstay@gmail.com</span><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-clock icon"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>
+                            <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+                            <strong>Sunday</strong>: <span>Closed</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Follow Us</h4>
+                    <div class="social-links d-flex">
+                        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">WanderStay</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">
+
+                Designed by <a href="#">Fahim Chowdhury</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="contact.js"></script>
+    <script src="hotel.js"></script>
+    <script src="register.js"></script>
+    <script src="deposit.js"></script>
+
+</body>
+
+</html>
