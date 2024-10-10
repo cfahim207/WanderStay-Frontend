@@ -389,6 +389,8 @@ const handleAddHotel = async (event) => {
         amount: amount,
         descriptions: description,
     }
+    console.log(selectedcountry)
+    console.log(description)
 
     console.log(HotelData);
     await fetch("https://wander-stay-api.vercel.app/hotel/list/", {
