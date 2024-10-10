@@ -361,7 +361,7 @@ const handleAddHotel = async (event) => {
 
     const name = getdata("name");
     const amount = getdata("amount");
-    const description = getdata("description");
+    const description = getdata("Hoteldescription");
 
     const image_file = document.getElementById("hotel_image").files[0];
     let imageUrl = "";
