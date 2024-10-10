@@ -139,7 +139,7 @@ const displayHotel = (hotels) => {
         div.classList.add("col-lg-3")
         div.innerHTML = ` 
               <div class="card h-card" style="height: 500px;">
-  <img src="images/about.jpg" class="card-img-top" alt="...">
+  <img src="${hotel.image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">${hotel.name} </h4>
     <p>Category:
