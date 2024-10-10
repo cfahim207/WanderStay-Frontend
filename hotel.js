@@ -167,9 +167,7 @@ const displayHotel = (hotels) => {
                   <b>BDT. ${hotel.amount} </b> <small>per night</small>
                 </h6>
                 <a target="_blank" href="details_hotel.html?hotelId=${hotel.id}" class="btn btn-warning">More Details</a>
-               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Give Review
-    </button>
+               
 
 
 

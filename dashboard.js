@@ -393,6 +393,7 @@ const handleAddHotel = async (event) => {
     console.log(description)
 
     console.log(HotelData);
+    console.log(JSON.stringify(HotelData));
     await fetch("https://wander-stay-api.vercel.app/hotel/list/", {
         method: "POST",
         headers: { "content-type": "application/json" },
