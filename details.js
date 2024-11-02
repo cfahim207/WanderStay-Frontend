@@ -45,10 +45,9 @@ const hotelDetails = (details) => {
             </p>
     
     
-            <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop">
-                Book Now
-            </button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Book Now
+    </button>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">
                 Give Review
@@ -68,13 +67,14 @@ const hotelDetails = (details) => {
 
 const hotelbooking = (event) => {
   const parm = new URLSearchParams(window.location.search).get("hotelId");
-  
   event.preventDefault();
   const token = localStorage.getItem("token");
   const customer_id = localStorage.getItem("customer_id");
   const adults = getdata("adults");
   const children = getdata("children");
   const staydate = getdata("staydate");
+
+  
   const data = {
     hotel: parm,
     customer: customer_id,

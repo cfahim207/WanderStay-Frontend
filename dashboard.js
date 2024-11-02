@@ -359,6 +359,8 @@ const handleAddHotel = async (event) => {
         option.value
     )
 
+    console.log("Selected Countries:", selectedcountry);
+
     const name = getdata("name");
     const amount = getdata("amount");
     const description = getdata("Hoteldescription");
@@ -389,8 +391,8 @@ const handleAddHotel = async (event) => {
         amount: amount,
         descriptions: description,
     }
-    console.log(selectedcountry)
-    console.log(description)
+    
+    
 
     console.log(HotelData);
     console.log(JSON.stringify(HotelData));

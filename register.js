@@ -127,7 +127,7 @@ const handlelogOut = () => {
             localStorage.removeItem("token");
             localStorage.removeItem("user_id");
             localStorage.removeItem("customer_id");
-            window.location.href = "login.html";
+            // window.location.href = "login.html";
         });
 };
 
