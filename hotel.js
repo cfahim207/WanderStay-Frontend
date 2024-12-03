@@ -136,9 +136,9 @@ const displayHotel = (hotels) => {
     hotels.forEach((hotel) => {
         const parent = document.getElementById("hotel-container");
         const div = document.createElement('div');
-        div.classList.add("col-lg-3")
+        div.classList.add("col-lg-3",'pb-5')
         div.innerHTML = ` 
-              <div class="card h-card" style="height: 500px;">
+              <div class="card h-card" style="height: 550px;">
   <img src="${hotel.image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">${hotel.name} </h4>
@@ -239,7 +239,8 @@ if (token) {
     document.getElementById("drop-item").innerHTML = `
     <li><a href="dashboard.html">Dashboard</a></li>
     <li><a href="deposite.html">Deposit</a></li>
-    <li><a onclick="handlelogOut()" href="">Logout</a></li>
+    <button class='btn btn-danger ms-3' onclick="handlelogOut()">Logout</button>
+    
     
   `;
 }
